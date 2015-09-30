@@ -1,0 +1,5 @@
+.inline-edit-product_tab .inline-edit-date,
+.inline-edit-product_tab .inline-edit-group,
+.inline-edit-product_tab .inline-edit-col label + label {
+  display: none;
+}
