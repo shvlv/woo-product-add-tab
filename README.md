@@ -22,7 +22,7 @@ Enter name and priority.
 
 ## What is priority?
 
-Tabs priority determine its position in relation to other tabs. Standard tabs on the product page have the following priority: **Description** - 10, **Additional Information** (shown only when you specify the weight or size) - 20, **Reviews** - 30. For example, for place tab on second place set priority - 15.
+Tabs *priority* determine its position in relation to other tabs. Standard tabs on the product page have the following priority: **Description** - 10, **Additional Information** (shown only when you specify the weight or size) - 20, **Reviews** - 30. For example, for place tab on second place set priority - 15.
 
 
 # Changelog
