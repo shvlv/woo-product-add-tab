@@ -151,7 +151,7 @@ if ( !class_exists( 'Woocommerce_Add_Tab' ) ) {
 			<p><?php _e( 'Tabs <i>priority</i> determine its position in relation to other tabs. Standard tabs on the product page have the following priority: <strong>Description</strong> - 10, <strong>Additional Information</strong> (shown only when you specify the weight or size) - 20, <strong>Reviews</strong> - 30. For example, for place tab on second place set priority - 15.', 'woocommerce-add-tab' ) ?>
 			</p>
 
-			<input type="text" class="short"  name="priority_tab" id="priority_tab" value="<?php echo $value ?>" placeholder="<?php _e('Input number', 'woocommerce-add-tab')?>">
+			<input type="text" class="short"  name="priority_tab" id="priority_tab" value="<?php echo $value ?>" placeholder="<?php _e('Input number', 'woocommerce-add-tab')?> ">
 
 		<?php }
 
