@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Woocommerce Add Tab
+ * Plugin Name: Woo Product Add Tab
  * Plugin URI: https://github.com/shvlv/woocommerce-add-tab
  * Description: Plugin allows you to add additional tabs on the product page in WooCommerce
  * Version: 0.8
