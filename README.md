@@ -1,10 +1,10 @@
 # Woo Product Add Tab
 
-Wordpress plugin allows to add additional tab on the product page in WooCommerce
+Wordpress plugin allows to add additional tab on the product page in WooCommerce.
 
 # Description
 
-After activating the plugin, you can create new tabs and change their order, and add unique content for each product.
+After activating the plugin, you can create new tabs, change their order and add unique content for each product.
 
 Tested with WooCommerce 2.4.6.
 

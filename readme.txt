@@ -7,11 +7,11 @@ Stable tag: 0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Plugin allows to add additional tabs on the product page in WooCommerce
+Plugin allows to add additional tabs on the product page in WooCommerce.
 
 == Description ==
 
-After activating the plugin, you can create new tabs and change their order, and add unique content for each product.
+After activating the plugin, you can create new tabs, change their order and add unique content for each product.
 
 Tested with WooCommerce 2.4.6.
 
