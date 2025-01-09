@@ -28,6 +28,8 @@ priority - 15.
 
 # Changelog
 
+## 0.9
+
 * WordPress 6.7 and Woo 9.5 compatibility.
 
 ## 0.8

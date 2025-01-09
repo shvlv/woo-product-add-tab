@@ -6,7 +6,7 @@ Tested up to: 6.7.1
 Requires PHP: 7.4
 WC requires at least: 8.0
 WC tested up to: 9.5.2
-Stable tag: 0.8
+Stable tag: 0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,9 +32,9 @@ Enter name and priority.
 
 Tabs priority determine its position in relation to other tabs. Standard tabs on the product page have the following priority: **Description** - 10, **Additional Information** (shown only when you specify the weight or size) - 20, **Reviews** - 30. For example, for place tab on second place set priority - 15.
 
-
 == Changelog ==
 
+= 0.9 =
 * WordPress 6.7 and Woo 9.5 compatibility.
 
 = 0.8 =
