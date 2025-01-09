@@ -1,8 +1,11 @@
 === Plugin Name ===
 Contributors: shvv
 Tags: woocommerce
-Requires at least: 3.0.1
-Tested up to: 4.3.1
+Requires at least: 6.2
+Tested up to: 6.7.1
+Requires PHP: 7.4
+WC requires at least: 8.0
+WC tested up to: 9.5.2
 Stable tag: 0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,8 +15,6 @@ Plugin allows to add additional tabs on the product page in WooCommerce.
 == Description ==
 
 After activating the plugin, you can create new tabs, change their order and add unique content for each product.
-
-Tested with WooCommerce 2.4.6.
 
 == Installation ==
 
@@ -33,6 +34,8 @@ Tabs priority determine its position in relation to other tabs. Standard tabs on
 
 
 == Changelog ==
+
+* WordPress 6.7 and Woo 9.5 compatibility.
 
 = 0.8 =
 * Add i18n capability.

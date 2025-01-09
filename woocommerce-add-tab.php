@@ -2,17 +2,20 @@
 /**
  * Plugin Name: Woo Product Add Tab
  * Plugin URI: https://github.com/shvlv/woocommerce-add-tab
- * Description: Plugin allows you to add additional tabs on the product page in WooCommerce
+ * Description: Plugin allows you to add additional tabs on the product page in WooCommerce.
  * Version: 0.8
  * Author: shvv
  * Author URI: http://shvlv.github.io/
  * License: GPLv2 or later
- * Tested up to: 4.3
+ * Requires at least: 6.2
+ * Tested up to: 6.7.1
+ * Requires PHP: 7.4
+ * WC requires at least: 8.0
+ * WC tested up to: 9.5.2
  * Text Domain: woocommerce-add-tab
  * Domain Path: /languages/
- *
- *
  */
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
@@ -56,7 +59,7 @@ if ( !class_exists( 'Woocommerce_Add_Tab' ) ) {
 			 */
 
 			add_action('woocommerce_product_write_panel_tabs', array($this,'panel_tabs'));
-			add_action('woocommerce_product_write_panels', array($this,'options_tabs'));
+			add_action('woocommerce_product_data_panels', array($this,'options_tabs'));
 			add_action('woocommerce_process_product_meta', array($this,'save_options'), 10, 2);
 
 			/**
@@ -65,7 +68,7 @@ if ( !class_exists( 'Woocommerce_Add_Tab' ) ) {
 			add_filter( 'woocommerce_product_tabs', array($this,'display_tabs') );
 
 			/**
-			 * Admin Wordpress hook
+			 * Admin WordPress hook
 			 */
 
 			add_action('admin_enqueue_scripts', array($this,'add_script'));
@@ -117,7 +120,7 @@ if ( !class_exists( 'Woocommerce_Add_Tab' ) ) {
 							'show_ui' => true,
 							'show_in_menu' => 'edit.php?post_type=product',
 							'show_in_nav_menus' => true,
-							'supports' => 'title',
+							'supports' => array('title'),
 							'capability_type'     => 'product',
 							'register_meta_box_cb' => array($this, 'add_field')
 					)
@@ -247,7 +250,7 @@ if ( !class_exists( 'Woocommerce_Add_Tab' ) ) {
 		{
 			foreach ($this->tabs as $tab) {
 				?>
-				<li class="custom_tab"><a href="<?php echo '#custom_tab_' . $tab->ID ?>"><?php echo $tab->post_title; ?></a></li>
+				<li class="custom_tab"><a href="<?php echo '#custom_tab_' . $tab->ID ?>"><span><?php echo $tab->post_title; ?></span></a></li>
 				<?php
 			}
 		}
@@ -264,10 +267,11 @@ if ( !class_exists( 'Woocommerce_Add_Tab' ) ) {
 			foreach ($this->tabs as $tab) {
 				?>
 				<div id="<?php echo 'custom_tab_' . $tab->ID ?>" class="panel woocommerce_options_panel">
-					<h3> <?php echo $tab->post_title;  ?> </h3>
-
 					<div class="options_group custom_tab_options">
 						<table class="form-table">
+							<tr>
+								<td><strong><?php echo $tab->post_title; ?></strong></td>
+							</tr>
 							<tr>
 								<td>
 									<?php
