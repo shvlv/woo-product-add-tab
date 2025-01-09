@@ -56,7 +56,7 @@ if ( !class_exists( 'Woocommerce_Add_Tab' ) ) {
 			 */
 
 			add_action('woocommerce_product_write_panel_tabs', array($this,'panel_tabs'));
-			add_action('woocommerce_product_write_panels', array($this,'options_tabs'));
+			add_action('woocommerce_product_data_panels', array($this,'options_tabs'));
 			add_action('woocommerce_process_product_meta', array($this,'save_options'), 10, 2);
 
 			/**
