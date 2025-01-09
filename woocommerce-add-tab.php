@@ -2,17 +2,20 @@
 /**
  * Plugin Name: Woo Product Add Tab
  * Plugin URI: https://github.com/shvlv/woocommerce-add-tab
- * Description: Plugin allows you to add additional tabs on the product page in WooCommerce
+ * Description: Plugin allows you to add additional tabs on the product page in WooCommerce.
  * Version: 0.8
  * Author: shvv
  * Author URI: http://shvlv.github.io/
  * License: GPLv2 or later
- * Tested up to: 4.3
+ * Requires at least: 6.2
+ * Tested up to: 6.7.1
+ * Requires PHP: 7.4
+ * WC requires at least: 8.0
+ * WC tested up to: 9.5.2
  * Text Domain: woocommerce-add-tab
  * Domain Path: /languages/
- *
- *
  */
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
@@ -65,7 +68,7 @@ if ( !class_exists( 'Woocommerce_Add_Tab' ) ) {
 			add_filter( 'woocommerce_product_tabs', array($this,'display_tabs') );
 
 			/**
-			 * Admin Wordpress hook
+			 * Admin WordPress hook
 			 */
 
 			add_action('admin_enqueue_scripts', array($this,'add_script'));
