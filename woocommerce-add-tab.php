@@ -247,7 +247,7 @@ if ( !class_exists( 'Woocommerce_Add_Tab' ) ) {
 		{
 			foreach ($this->tabs as $tab) {
 				?>
-				<li class="custom_tab"><a href="<?php echo '#custom_tab_' . $tab->ID ?>"><?php echo $tab->post_title; ?></a></li>
+                <li class="custom_tab"><a href="<?php echo '#custom_tab_' . $tab->ID ?>"><span><?php echo $tab->post_title; ?></span></a></li>
 				<?php
 			}
 		}
@@ -264,10 +264,11 @@ if ( !class_exists( 'Woocommerce_Add_Tab' ) ) {
 			foreach ($this->tabs as $tab) {
 				?>
 				<div id="<?php echo 'custom_tab_' . $tab->ID ?>" class="panel woocommerce_options_panel">
-					<h3> <?php echo $tab->post_title;  ?> </h3>
-
 					<div class="options_group custom_tab_options">
 						<table class="form-table">
+                            <tr>
+                                <td><strong><?php echo $tab->post_title; ?></strong></td>
+                            </tr>
 							<tr>
 								<td>
 									<?php
