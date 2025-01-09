@@ -117,7 +117,7 @@ if ( !class_exists( 'Woocommerce_Add_Tab' ) ) {
 							'show_ui' => true,
 							'show_in_menu' => 'edit.php?post_type=product',
 							'show_in_nav_menus' => true,
-							'supports' => 'title',
+							'supports' => array('title'),
 							'capability_type'     => 'product',
 							'register_meta_box_cb' => array($this, 'add_field')
 					)
