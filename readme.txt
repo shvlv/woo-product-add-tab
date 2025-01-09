@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Woo Product Add Tab ===
 Contributors: shvv
 Tags: woocommerce
 Requires at least: 6.2
